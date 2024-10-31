@@ -5,11 +5,16 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-size: var(--font-size-base);
     font-family: var(--base-font);
     color: black;
     line-height: 140%;
+    
 }
 
 h4{
@@ -57,6 +62,25 @@ img{
     .desktop{
         display: block;
     }
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.scroll-to-top:hover {
+    opacity: 1;
 }
 header{
     background-color: var(--header-blue);
@@ -229,9 +253,9 @@ header{
             aspect-ratio: 5/2;
         }
         .event {
-            flex: 1 1 49%; /* Takes up 50% of the container width */
-            box-sizing: border-box; /* Includes padding and border in the width */
-            padding: 16px; /* Adjust padding as needed */
+            flex: 1 1 49%; 
+            box-sizing: border-box; 
+            padding: 16px; 
             border: 1px solid var(--heading-gold); 
             border-radius: var(--border-radius-base);
         }
@@ -266,9 +290,9 @@ header{
         gap: 1rem;
         padding-block: var(--base-padding); 
         article{
-            flex: 1 1 49%; /* Takes up 50% of the container width */
-            box-sizing: border-box; /* Includes padding and border in the width */
-            padding: 16px; /* Adjust padding as needed */
+            flex: 1 1 49%; 
+            box-sizing: border-box; 
+            padding: 16px; 
             border: 1px solid var(--heading-gold); 
             border-radius: var(--border-radius-base);
         }
